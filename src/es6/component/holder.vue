@@ -1,8 +1,8 @@
 <template>
-<div class="my-5">
+<div class="my-2">
   <div class="btn-group" role="group" aria-label="Basic example">
-    <button @click="updateComponent('dominic')" type="button" class="btn btn-primary">Dominic</button>
-    <button @click="updateComponent('palace')" type="button" class="btn btn-secondary">Palace</button>
+    <button @click="updateComponent('palace')" type="button" class="btn" :class="[component == 'palace' ? 'btn-primary' : 'btn-secondary']">Palace</button>
+    <button @click="updateComponent('dominic')" type="button" class="btn" :class="[component == 'dominic' ? 'btn-primary' : 'btn-secondary']">Dominic</button>
   </div>
   <div v-if="component == 'dominic'">
     <app-dominic></app-dominic>
@@ -19,7 +19,7 @@
 export default {
   data () {
     return {
-      component: 'dominic'
+      component: 'palace'
     }
   },
   methods: {

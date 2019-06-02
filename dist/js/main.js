@@ -134,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      component: 'dominic'
+      component: 'palace'
     };
   },
   methods: {
@@ -722,7 +722,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("Hello world from dominic")])])
+    return _c("div", { staticClass: "my-3" }, [
+      _c("h1", [_vm._v("Hello world from dominic")])
+    ])
   }
 ]
 render._withStripped = true
@@ -746,7 +748,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "my-5" }, [
+  return _c("div", { staticClass: "my-2" }, [
     _c(
       "div",
       {
@@ -757,21 +759,10 @@ var render = function() {
         _c(
           "button",
           {
-            staticClass: "btn btn-primary",
-            attrs: { type: "button" },
-            on: {
-              click: function($event) {
-                return _vm.updateComponent("dominic")
-              }
-            }
-          },
-          [_vm._v("Dominic")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-secondary",
+            staticClass: "btn",
+            class: [
+              _vm.component == "palace" ? "btn-primary" : "btn-secondary"
+            ],
             attrs: { type: "button" },
             on: {
               click: function($event) {
@@ -780,6 +771,23 @@ var render = function() {
             }
           },
           [_vm._v("Palace")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn",
+            class: [
+              _vm.component == "dominic" ? "btn-primary" : "btn-secondary"
+            ],
+            attrs: { type: "button" },
+            on: {
+              click: function($event) {
+                return _vm.updateComponent("dominic")
+              }
+            }
+          },
+          [_vm._v("Dominic")]
         )
       ]
     ),
@@ -814,6 +822,20 @@ var render = function() {
   return _c("div", { staticClass: "my-3" }, [
     _c("h1", { staticClass: "text-center my-2" }, [_vm._v("Palace")]),
     _vm._v(" "),
+    _c("div", { staticClass: "my-3" }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-lg btn-info", on: { click: _vm.prev } },
+        [_vm._v("Prev")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-lg btn-info", on: { click: _vm.next } },
+        [_vm._v("Next")]
+      )
+    ]),
+    _vm._v(" "),
     _c("h2", { staticClass: "text-center" }, [
       _c("span", { staticClass: "d-inline-block my-2" }, [
         _vm._v("\n      No - " + _vm._s(_vm.currentIndex + 1) + "\n    ")
@@ -821,16 +843,6 @@ var render = function() {
       _vm._v(" "),
       _c("span", { staticClass: "d-block border border-primary my-2 py-2" }, [
         _vm._v("\n      " + _vm._s(_vm.currentPalace) + "\n    ")
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "my-3" }, [
-      _c("button", { staticClass: "btn btn-info", on: { click: _vm.prev } }, [
-        _vm._v("Prev")
-      ]),
-      _vm._v(" "),
-      _c("button", { staticClass: "btn btn-info", on: { click: _vm.next } }, [
-        _vm._v("Next")
       ])
     ]),
     _vm._v(" "),
@@ -13065,15 +13077,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************!*\
   !*** ./src/es6/component/holder.vue ***!
   \**************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _holder_vue_vue_type_template_id_351c7c84___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./holder.vue?vue&type=template&id=351c7c84& */ "./src/es6/component/holder.vue?vue&type=template&id=351c7c84&");
 /* harmony import */ var _holder_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./holder.vue?vue&type=script&lang=js& */ "./src/es6/component/holder.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _holder_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _holder_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -13103,7 +13114,7 @@ component.options.__file = "src/es6/component/holder.vue"
 /*!***************************************************************!*\
   !*** ./src/es6/component/holder.vue?vue&type=script&lang=js& ***!
   \***************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13236,8 +13247,8 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/polo/Documents/mm/src/es6/main.js */"./src/es6/main.js");
-module.exports = __webpack_require__(/*! /home/polo/Documents/mm/src/scss/main.scss */"./src/scss/main.scss");
+__webpack_require__(/*! /home/polo/Documents/mnext/src/es6/main.js */"./src/es6/main.js");
+module.exports = __webpack_require__(/*! /home/polo/Documents/mnext/src/scss/main.scss */"./src/scss/main.scss");
 
 
 /***/ })

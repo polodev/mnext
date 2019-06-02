@@ -1,6 +1,10 @@
 <template>
 <div class="my-3">
   <h1 class="text-center my-2">Palace</h1>
+  <div class="my-3">
+    <button class="btn btn-lg btn-info" @click='prev'>Prev</button>
+    <button class="btn btn-lg btn-info" @click='next'>Next</button>
+  </div>
   <h2 class="text-center">
     <span class="d-inline-block my-2">
       No - {{ currentIndex + 1 }}
@@ -9,10 +13,6 @@
       {{ currentPalace }}
     </span>
   </h2>
-  <div class="my-3">
-    <button class="btn btn-info" @click='prev'>Prev</button>
-    <button class="btn btn-info" @click='next'>Next</button>
-  </div>
 
   <div class="my-4">
     <div class="form-group row">
