@@ -223,7 +223,7 @@ __webpack_require__.r(__webpack_exports__);
     updateIndex: function updateIndex() {
       var index = parseInt(this.gotoIndex);
 
-      if (index > 0 && index < this.totalLength - 1) {
+      if (index > 0 && index <= this.totalLength) {
         this.currentIndex = index - 1;
       }
     }

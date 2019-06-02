@@ -65,7 +65,7 @@ export default {
     },
     updateIndex() {
       var index = parseInt(this.gotoIndex);
-      if (index > 0 && index < (this.totalLength - 1)) {
+      if (index > 0 && index <= (this.totalLength)) {
         this.currentIndex = (index - 1);
       }
     },
