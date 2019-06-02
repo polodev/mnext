@@ -11,7 +11,15 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/esc/main.js', 'dist/').sass('src/css/main.scss', 'dist/');
+mix.js('src/es6/main.js', 'dist/js/')
+.sass('src/scss/main.scss', 'dist/css/')
+ .webpackConfig({
+    devtool: 'source-map'
+  })
+  .sourceMaps()
+  .options({
+    processCssUrls: false,
+  });
 
 // Full API
 // mix.js(src, output);
