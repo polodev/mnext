@@ -983,11 +983,11 @@ var render = function() {
     _vm._v(" "),
     _c("h2", { staticClass: "text-center" }, [
       _c("span", { staticClass: "d-inline-block my-2" }, [
-        _vm._v("\n      No - " + _vm._s(_vm.currentIndex + 1) + "\n    ")
+        _vm._v("\r\n      No - " + _vm._s(_vm.currentIndex + 1) + "\r\n    ")
       ]),
       _vm._v(" "),
       _c("span", { staticClass: "d-block border border-primary my-2 py-2" }, [
-        _vm._v("\n      " + _vm._s(_vm.currentPalace) + "\n    ")
+        _vm._v("\r\n      " + _vm._s(_vm.currentPalace) + "\r\n    ")
       ])
     ]),
     _vm._v(" "),
@@ -15027,8 +15027,8 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/polo/Documents/mnext/src/es6/main.js */"./src/es6/main.js");
-module.exports = __webpack_require__(/*! /home/polo/Documents/mnext/src/scss/main.scss */"./src/scss/main.scss");
+__webpack_require__(/*! C:\Users\User\Documents\shibu\mnext\src\es6\main.js */"./src/es6/main.js");
+module.exports = __webpack_require__(/*! C:\Users\User\Documents\shibu\mnext\src\scss\main.scss */"./src/scss/main.scss");
 
 
 /***/ })
